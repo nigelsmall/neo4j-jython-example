@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+LIB=`dirname $0`/lib
+
+for jar in "$LIB"/*.jar
+do
+    [ -z "$CLASSPATH" ] && CLASSPATH="$jar" || CLASSPATH="$CLASSPATH":"$jar"
+done
+
+export JYTHONPATH="$CLASSPATH"
+jython $1
+

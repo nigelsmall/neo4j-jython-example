@@ -1,0 +1,6 @@
+*~
+*.[jp]y[co]
+data/*
+.idea
+venv
+*$py.class

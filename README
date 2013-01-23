@@ -1,0 +1,7 @@
+Neo4j Jython Example
+====================
+
+Make sure jython is on your path (version 2.7 or above) and execute:
+
+./run app.py
+
